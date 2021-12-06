@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="13" total="14" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20185" started-at="2021-12-06T19:12:07 IST" finished-at="2021-12-06T19:12:27 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="20185" started-at="2021-12-06T19:12:07 IST" finished-at="2021-12-06T19:12:27 IST">
+      <class name="com.ubsdemo.testcases.HomePageTest">
+        <test-method status="PASS" signature="initialSetup(java.lang.String)[pri:0, instance:com.ubsdemo.testcases.HomePageTest@6591f517]" name="initialSetup" is-config="true" duration-ms="5928" started-at="2021-12-06T19:12:07 IST" finished-at="2021-12-06T19:12:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialSetup -->
+        <test-method status="FAIL" signature="ubsSearch()[pri:0, instance:com.ubsdemo.testcases.HomePageTest@6591f517]" name="ubsSearch" duration-ms="13801" started-at="2021-12-06T19:12:13 IST" finished-at="2021-12-06T19:12:26 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<7> but was:<5>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<7> but was:<5>
+at org.junit.Assert.fail(Assert.java:88)
+at org.junit.Assert.failNotEquals(Assert.java:834)
+at org.junit.Assert.assertEquals(Assert.java:645)
+at org.junit.Assert.assertEquals(Assert.java:631)
+at com.ubsdemo.testcases.HomePageTest.ubsSearch(HomePageTest.java:198)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ubsSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ubsdemo.testcases.HomePageTest@6591f517]" name="tearDown" is-config="true" duration-ms="113" started-at="2021-12-06T19:12:27 IST" finished-at="2021-12-06T19:12:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ubsdemo.testcases.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
