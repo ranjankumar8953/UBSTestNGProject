@@ -184,10 +184,11 @@ public class HomePageTest extends TestBase {
 		homepage.clickOnCucumberHooks();
 		List<WebElement> cucumberLink = driver.findElements(By.tagName("a"));
 		Iterator<WebElement> itr = cucumberLink.iterator();
+		WebElement cucumberText;
 		while (itr.hasNext()) {
-			String cucumberText = itr.next().getText();
-			if (cucumberText.equalsIgnoreCase("Cucumber Hooks")) {
-				itr.next().click();
+			cucumberText = itr.next();
+			if (cucumberText.getText().equalsIgnoreCase("Cucumber Hooks")) {
+				cucumberText.click();
 				break;
 			}
 		}
